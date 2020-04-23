@@ -1,0 +1,16 @@
+{
+  "name": "covid-19-tracker",
+  "version": "1.0.0",
+  "description": "```\r 1. Static template\r 2. Make axios call to the API\r 3. Ensure the API is called once every 5mins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1"
+  }
+}
