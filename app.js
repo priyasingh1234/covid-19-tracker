@@ -13,7 +13,7 @@ app.get("/",async (req,res)=>
 {
     var result=await axios.get('https://api.covid19india.org/data.json')
     //res.send(result.data.cases_time_series[82])
-    res.render("index",{name: "Lalit"})
+    res.render("index",{name: "Lalit 123"})
 }) 
 
 let port = 3000 

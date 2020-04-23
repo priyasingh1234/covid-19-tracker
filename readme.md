@@ -1,3 +1,5 @@
+
+
 # TARGET
 
 ### Day 1
@@ -14,3 +16,4 @@
 2. Clean the template
 3. Show a data from th API in the static file
 ```
+https://github.com/ZRCOOL/covid-19-tracker
