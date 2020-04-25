@@ -12,5 +12,13 @@
     "axios": "^0.19.2",
     "ejs": "^3.0.2",
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZRCOOL/covid-19-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZRCOOL/covid-19-tracker/issues"
+  },
+  "homepage": "https://github.com/ZRCOOL/covid-19-tracker#readme"
 }
