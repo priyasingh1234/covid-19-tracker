@@ -53,7 +53,7 @@
                   </div>
                 </div>
               </div>
-          
+       
             </div>
             <!-- Page Title Header Ends-->
             <div class="row">
@@ -198,7 +198,17 @@
     <script src="../assets/js/shared/misc.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
+    <script>
+      var dailyconfirmed = <%- result.dailyconfirmed %>
+      var dailydeceased = <%- result.dailydeceased %>
+      var dailyrecovered = <%- result.dailyrecovered %>
+
+      var totalconfirmed = <%- result.totalconfirmed %>
+      var totaldeceased = <%- result.totaldeceased %>
+      var totalrecovered = <%- result.totalrecovered %>
+    </script>
     <script src="../assets/js/demo_1/dashboard.js"></script>
+
     <!-- End custom js for this page-->
   </body>
 </html>

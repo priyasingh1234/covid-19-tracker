@@ -10,10 +10,12 @@ app.set("view engine","ejs")  // this simply sets the view engine for a express 
 
 app.get("/",async (req,res)=>
 {
-    var result=await axios.get('https://api.covid19india.org/data.json')//YO SMJH GYE YE
-    //console.log(result.data.cases_time_series[87])
+    var axiosResult=await axios.get('https://api.covid19india.org/data.json') //abey zoom dekh
+
+    //console.log(axiosResult.data)
+    let n = axiosResult.data.cases_time_series.length-1; //yes
     res.render("index",{
-        result: result.data.cases_time_series[86]
+        result: axiosResult.data.cases_time_series[n]
     }) //it is a function that renders the ejs pages
     // passed to it that exists in the views folder
     //name kyu? // ek baat bta tyjhe kaise pta ki ejs file , views /forms k andar hai?

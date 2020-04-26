@@ -31,8 +31,8 @@
       var gradientStrokeFill_2 = salesChartCanvas.createLinearGradient(0, 0, 0, 400);
       gradientStrokeFill_2.addColorStop(1, 'rgba(255, 255, 255, 0.01)');
       gradientStrokeFill_2.addColorStop(0, '#14c671');
-      var data_1_1 = [60, 75, 65, 130, 130, 145, 110, 145, 155, 149, 170];
-      var data_1_2 = [0, 25, 20, 40, 70, 52, 49, 90, 70, 94, 110, 135];
+      var data_1_1 = [dailyconfirmed,dailydeceased,dailyrecovered];
+      var data_1_2 = [totalconfirmed, totaldeceased, totalrecovered];
 
       var data_2_1 = [130, 145, 155, 60, 75, 65, 130, 110, 145, 149, 170];
       var data_2_2 = [0, 70, 52, 90, 25, 20, 40, 70, 49, 94, 110, 135];
@@ -97,7 +97,7 @@
         },
         scales: {
           xAxes: [{
-            display: false,
+            display: true,
             ticks: {
               display: false,
               beginAtZero: false
@@ -108,9 +108,9 @@
           }],
           yAxes: [{
             ticks: {
-              max: 200,
+              max: 30000,
               min: 0,
-              stepSize: 50,
+              stepSize: 5000,
               fontColor: "#858585",
               beginAtZero: false
             },
