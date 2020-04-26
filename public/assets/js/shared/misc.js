@@ -53,7 +53,7 @@ var lightColor = getComputedStyle(document.body).getPropertyValue('--light');
       $("#sidebar > .nav > .nav-item").find('.collapse.show').collapse('hide');
     });
 
-    function appendBanner() {
+    /*function appendBanner() {
       var bannerState = localStorage.getItem('bannerState') ? localStorage.getItem('bannerState') : "enabled";
       if (bannerState == "enabled") {
         $("body").addClass("purchase-banner-active");
@@ -72,7 +72,7 @@ var lightColor = getComputedStyle(document.body).getPropertyValue('--light');
           localStorage.setItem('bannerState', "disabled");
         });
       }
-    }
+    }*/
 
     appendBanner();
 
