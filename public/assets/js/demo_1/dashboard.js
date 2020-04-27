@@ -15,7 +15,7 @@
       },
       elements: {
         point: {
-          radius: 0
+          radius: 0  // chart me data sending , graph scaling (but more to do)
         },
         line: {
           tension: 0
@@ -43,15 +43,15 @@
       var data_4_1 = [130, 145, 65, 130, 75, 145, 149, 170, 110, 155, 60];
       var data_4_2 = [0, 70, 90, 25, 40, 20, 94, 110, 135, 70, 49, 52];
       var areaData = {
-        labels: ["Confirmed", "Deceased", "Recovered"],
+        labels: ["Jan 1", "Jan 7", "Jan 14", "Jan 21", "Jan 28", "Feb 4", "Feb 11", "Feb 18"],
         datasets: [{
-          label: 'Daily',
+          label: 'Revenue',
           data: data_1_1,
           borderColor: infoColor,
           backgroundColor: gradientStrokeFill_1,
           borderWidth: 2
         }, {
-          label: 'Total',
+          label: 'Sales',
           data: data_1_2,
           borderColor: successColor,
           backgroundColor: gradientStrokeFill_2,
@@ -99,16 +99,16 @@
           xAxes: [{
             display: true,
             ticks: {
-              display: true,
+              display: false,
               beginAtZero: false
             },
             gridLines: {
-              drawBorder: true
+              drawBorder: false
             }
           }],
           yAxes: [{
             ticks: {
-              max: totalconfirmed+2000,
+              max: 30000,
               min: 0,
               stepSize: 5000,
               fontColor: "#858585",
@@ -693,7 +693,7 @@
     }
     if ($("#dashboard-vmap").length) {
       $('#dashboard-vmap').vectorMap({
-        map: 'mill_in',
+        map: 'world_mill_en',
         panOnDrag: true,
         backgroundColor: 'transparent',
         focusOn: {
