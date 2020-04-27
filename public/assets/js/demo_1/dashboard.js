@@ -693,7 +693,7 @@
     }
     if ($("#dashboard-vmap").length) {
       $('#dashboard-vmap').vectorMap({
-        map: 'world_mill_en',
+        map: 'mill_in',
         panOnDrag: true,
         backgroundColor: 'transparent',
         focusOn: {
