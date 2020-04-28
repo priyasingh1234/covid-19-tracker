@@ -162,10 +162,10 @@
               <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body d-flex flex-column">
-                      <h4>Date : <%= result.state %></h4>
+                      <h4>State : <%= result.state %></h4>
                       <ul> 
-                        <li>A : <%= result.dailyconfirmed %></li>
-                        <li>Daily Deceased : <%= result.dailydeceased %></li>
+                        <li>A : <%= result.active %></li>
+                        <li>Daily Deceased : <%= result.deaths %></li>
                         <li>Daily Recovered: <%= result.dailyrecovered %></li>
                         <hr>
                         <li>Total Confirmed: <%= result.totalconfirmed %></li>
@@ -199,8 +199,8 @@
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script>
-      var dailyconfirmed = <%- result.dailyconfirmed %> 
-      var dailydeceased = <%- result.dailydeceased %>
+      var dailyconfirmed = <%- result.active %> 
+      var dailydeceased = <%- result.deaths %>
       var dailyrecovered = <%- result.dailyrecovered %>
 
       var totalconfirmed = <%- result.totalconfirmed %>
