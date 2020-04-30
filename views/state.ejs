@@ -164,9 +164,9 @@
                   <div class="card-body d-flex flex-column">
                       <h4>State : <%= result.state %></h4>
                       <ul> 
-                        <li>A : <%= result.active %></li>
+                        <li>Active Cases: <%= result.active %></li>
                         <li>Daily Deceased : <%= result.deaths %></li>
-                        <li>Daily Recovered: <%= result.dailyrecovered %></li>
+                        <li>Daily Recovered: <%= result.recovered %></li>
                         <hr>
                         <li>Total Confirmed: <%= result.totalconfirmed %></li>
                         <li>Total Deceased: <%= result.totaldeceased %></li>
@@ -201,11 +201,11 @@
     <script>
       var dailyconfirmed = <%- result.active %> 
       var dailydeceased = <%- result.deaths %>
-      var dailyrecovered = <%- result.dailyrecovered %>
+      var dailyrecovered = <%- result.recovered %>
 
-      var totalconfirmed = <%- result.totalconfirmed %>
-      var totaldeceased = <%- result.totaldeceased %>
-      var totalrecovered = <%- result.totalrecovered %>
+      var totalconfirm = <%- result.totalconfirmed %>
+      var totaldecease = <%- result.totaldeceased %>
+      var totalrecover = <%- result.totalrecovered %>
     </script>
     <script src="../assets/js/demo_1/dashboard.js"></script>
 

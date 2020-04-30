@@ -40,9 +40,9 @@ app.get("/:state",async (req,res)=>
     //arr.map((value)=>{console.log(value)})
 })
 
-app.get("*",(req,res)=>{
-    res.render("pages/error-404.ejs")
-})
+// app.get("*",(req,res)=>{
+//     res.render("pages/error-404.ejs")
+// })
 
 let port = 3000 
 app.listen(port,()=>{
