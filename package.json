@@ -4,7 +4,8 @@
   "description": "```\r 1. Static template\r 2. Make axios call to the API\r 3. Ensure the API is called once every 5mins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
