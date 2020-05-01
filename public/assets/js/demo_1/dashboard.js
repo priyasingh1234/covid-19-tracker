@@ -695,7 +695,7 @@
       $('#dashboard-vmap').vectorMap({  
         map: 'in_mill',
         panOnDrag: true,
-        backgroundColor: "#427bf5",
+        backgroundColor: "transparent",
         focusOn: {
           x: 0.5,
           y: 0.5,
