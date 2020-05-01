@@ -16,4 +16,10 @@
 2. Clean the template
 3. Show a data from th API in the static file
 ```
-https://github.com/ZRCOOL/covid-19-tracker
+
+### DAY 3
+```
+1. Backend Bug fix
+2. Show graph and data in state.ejs
+4. header edit
+```
