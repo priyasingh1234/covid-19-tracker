@@ -27,6 +27,7 @@ app.get("/",async (req,res)=>
 
 app.get("/:state",async (req,res)=>
 {
+    axiosResult=await fetchData();
     axiosResult.data.statewise.map((key)=>{
         if(key.state==req.params.state){
             res.render("state",{

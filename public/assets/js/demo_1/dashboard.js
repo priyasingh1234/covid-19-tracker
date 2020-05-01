@@ -15,7 +15,7 @@
       },
       elements: {
         point: {
-          radius: 0
+          radius: 0    
         },
         line: {
           tension: 0
@@ -31,7 +31,7 @@
       var gradientStrokeFill_2 = salesChartCanvas.createLinearGradient(0, 0, 0, 400);
       gradientStrokeFill_2.addColorStop(1, 'rgba(255, 255, 255, 0.01)');
       gradientStrokeFill_2.addColorStop(0, '#14c671');
-      var data_1_1 = [dailyconfirmed,dailydeceased,dailyrecovered];
+      var data_1_1 = [dailyconfirmed,dailydeceased,dailyrecovered]; 
       var data_1_2 = [totalconfirmed, totaldeceased, totalrecovered];
 
       var data_2_1 = [130, 145, 155, 60, 75, 65, 130, 110, 145, 149, 170];
@@ -102,13 +102,13 @@
               display: true,
               beginAtZero: false
             },
-            gridLines: {
+            gridLines: {            
               drawBorder: true
             }
           }],
           yAxes: [{
             ticks: {
-              max: totalconfirmed+2000,
+              max: totalconfirmed+180,
               min: 0,
               stepSize: 5000,
               fontColor: "#858585",

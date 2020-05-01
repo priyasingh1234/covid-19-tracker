@@ -52,7 +52,7 @@
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> 
        
             </div>
             <!-- Page Title Header Ends-->
@@ -64,7 +64,7 @@
                       <div class="col-lg-3 col-md-6">
                         <div class="d-flex">
                           <div class="wrapper">
-                            <h3 class="mb-0 font-weight-semibold"> <%= result.dailyconfirmed %></h3>
+                            <h3 class="mb-0 font-weight-semibold"> <%= result.deltaconfirmed %></h3>
                             <h5 class="mb-0 font-weight-medium text-primary">Daily Confirmed</h5>
                             <!--<p class="mb-0 text-muted">+14.00(+0.50%)</p>-->
                           </div>
@@ -76,7 +76,7 @@
                       <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
                         <div class="d-flex">
                           <div class="wrapper">
-                            <h3 class="mb-0 font-weight-semibold"><%= result.dailydeceased %></h3>
+                            <h3 class="mb-0 font-weight-semibold"><%= result.deltadeaths %></h3> 
                             <h5 class="mb-0 font-weight-medium text-primary">Daily Deceased</h5>
                            <!--<p class="mb-0 text-muted">+138.97(+0.54%)</p>-->
                           </div>
@@ -88,7 +88,7 @@
                       <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
                         <div class="d-flex">
                           <div class="wrapper">
-                            <h3 class="mb-0 font-weight-semibold"><%= result.dailyrecovered %></h3>
+                            <h3 class="mb-0 font-weight-semibold"><%= result.deltarecovered %></h3>
                             <h5 class="mb-0 font-weight-medium text-primary">Daily Recovered</h5>
                            <!--- <p class="mb-0 text-muted">+57.62(+0.76%)</p>-->
                           </div>
@@ -100,7 +100,7 @@
                       <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
                         <div class="d-flex">
                           <div class="wrapper">
-                            <h3 class="mb-0 font-weight-semibold"> <%= result.totalconfirmed %></h3>
+                            <h3 class="mb-0 font-weight-semibold"> <%= result.confirmed %></h3>
                             <h5 class="mb-0 font-weight-medium text-primary">Total Confirmed</h5>
                             <!--<p class="mb-0 text-muted">+138.97(+0.54%)</p>-->
                           </div>
@@ -165,12 +165,12 @@
                       <h4>State : <%= result.state %></h4>
                       <ul> 
                         <li>Active Cases: <%= result.active %></li>
-                        <li>Daily Deceased : <%= result.deaths %></li>
-                        <li>Daily Recovered: <%= result.recovered %></li>
+                        <li>Daily Deceased : <%= result.deltadeaths %></li>
+                        <li>Daily Recovered: <%= result.deltarecovered %></li>
                         <hr>
-                        <li>Total Confirmed: <%= result.totalconfirmed %></li>
-                        <li>Total Deceased: <%= result.totaldeceased %></li>
-                        <li>Total Recovered: <%= result.totalrecovered %></li>
+                        <li>Total Confirmed: <%= result.confirmed %></li>
+                        <li>Total Deceased: <%= result.deaths %></li>
+                        <li>Total Recovered: <%= result.recovered %></li>
                       </ul>
                   </div>
                 </div>
@@ -199,13 +199,14 @@
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script>
-      var dailyconfirmed = <%- result.active %> 
-      var dailydeceased = <%- result.deaths %>
-      var dailyrecovered = <%- result.recovered %>
 
-      var totalconfirm = <%- result.totalconfirmed %>
-      var totaldecease = <%- result.totaldeceased %>
-      var totalrecover = <%- result.totalrecovered %>
+ /// ho gya?
+    var dailyconfirmed=  <%= result.active %>
+    var dailydeceased= <%= result.deltadeaths %>  
+    var dailyrecovered=<%= result.deltarecovered %>
+    var totalconfirmed= <%= result.confirmed %>
+    var totaldeceased= <%= result.deaths %>
+     var totalrecovered= <%= result.recovered %>
     </script>
     <script src="../assets/js/demo_1/dashboard.js"></script>
 
