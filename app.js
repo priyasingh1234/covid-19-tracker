@@ -45,7 +45,7 @@ app.get("/:state",async (req,res)=>
 //     res.render("pages/error-404.ejs")
 // })
 
-let port = 3000 || process.env.PORT
+let port = process.env.PORT || 3000 
 app.listen(port,process.env.IP,()=>{
     console.log(`Server live on ${port}`)
 })
