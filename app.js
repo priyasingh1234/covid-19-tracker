@@ -19,10 +19,7 @@ app.get("/",async (req,res)=>
     let n = axiosResult.data.cases_time_series.length-1; //yes
     res.render("index",{
         result: axiosResult.data.cases_time_series[n]
-    }) //it is a function that renders the ejs pages
-    // passed to it that exists in the views folder
-    //name kyu? // ek baat bta tyjhe kaise pta ki ejs file , views /forms k andar hai?
-    //arrrrrrrreeee wo to hmbhi dekh liye but usme hi html page h ye kaise pta ?    
+    }) //it is a function that renders the ejs pages   
 }) 
 
 app.get("/:state",async (req,res)=>
